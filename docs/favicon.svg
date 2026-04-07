@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ShainiandoJardines">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#166534"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="#0f172a"/>
+  <path d="M50 14c-11 1-20 6-26 15-5 8-7 17-8 21 9-1 18-3 26-8 9-6 14-15 15-26-2-1-4-2-7-2z" fill="url(#g)"/>
+  <path d="M16 48c8-8 15-14 24-19" stroke="#bbf7d0" stroke-width="3" stroke-linecap="round" fill="none"/>
+</svg>
