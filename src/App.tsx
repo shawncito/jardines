@@ -19,6 +19,18 @@ import {
   Sparkles
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import heroPrincipal from '../fotos/Hero principal.png';
+import entradaAcogedora from '../fotos/Entrada acogedora.png';
+import clientesFelices from '../fotos/Clientes felices.png';
+import equipoDeTrabajo from '../fotos/Equipo de trabajo.png';
+import fachadaLocal from '../fotos/Fachadalocal.png';
+import herramientasOrganizadas from '../fotos/Herramientas organizadas.png';
+import jardineroTrabajandoUno from '../fotos/Jardineros trabajando (1 de 2).png';
+import jardineroTrabajandoDos from '../fotos/Jardineros trabajando (2 de 2).png';
+import antesYDespues from '../fotos/Antes y después.png';
+import galeriaMinimalista from '../fotos/Galería Jardín minimalista.png';
+import galeriaTropical from '../fotos/Galería Jardín tropical.png';
+import galeriaZen from '../fotos/Galería Jardín zen japonés.png';
 
 const navLinks = [
   { name: 'Inicio', href: '#home' },
@@ -34,7 +46,7 @@ const services = [
     title: 'Chapeado de Jardines',
     description: 'Eliminación profesional de maleza y limpieza profunda para que su jardín luzca impecable.',
     icon: <Scissors className="w-8 h-8 text-brand-600" />,
-    image: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&q=80&w=1000',
+    image: jardineroTrabajandoUno,
     details: [
       'Chapeado manual o con motoguadaña según el terreno.',
       'Limpieza de bordes, aceras y zonas cercanas a muros.',
@@ -45,7 +57,7 @@ const services = [
     title: 'Limpieza de Lotes',
     description: 'Mantenimiento y limpieza de lotes baldíos, eliminando vegetación no deseada y escombros.',
     icon: <TreeDeciduous className="w-8 h-8 text-brand-600" />,
-    image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&q=80&w=1000',
+    image: heroPrincipal,
     details: [
       'Despeje de maleza alta y vegetación invasiva.',
       'Retiro de ramas secas, hojas y residuos livianos.',
@@ -56,7 +68,7 @@ const services = [
     title: 'Corte de Zacate',
     description: 'Corte uniforme y detallado para mantener la salud y estética de su césped.',
     icon: <Leaf className="w-8 h-8 text-brand-600" />,
-    image: 'https://images.unsplash.com/photo-1592419044706-39796d40f98c?auto=format&fit=crop&q=80&w=1000',
+    image: jardineroTrabajandoDos,
     details: [
       'Corte parejo por niveles para proteger la raíz del zacate.',
       'Perfilado de bordes para acabado más limpio.',
@@ -67,7 +79,7 @@ const services = [
     title: 'Áreas Verdes',
     description: 'Mantenimiento integral de parques, jardines residenciales y áreas comunes.',
     icon: <Sparkles className="w-8 h-8 text-brand-600" />,
-    image: 'https://images.unsplash.com/photo-1557429287-b2e26467fc2b?auto=format&fit=crop&q=80&w=1000',
+    image: fachadaLocal,
     details: [
       'Rondas periódicas de mantenimiento preventivo.',
       'Control visual de zonas de riego y crecimiento irregular.',
@@ -115,29 +127,29 @@ const planBasePriceMap: Record<string, number> = {
 
 const gallery = [
   {
-    before: 'https://images.unsplash.com/photo-1557429287-b2e26467fc2b?auto=format&fit=crop&q=80&w=1200',
-    after: 'https://images.unsplash.com/photo-1558904541-efa8c1965f1e?auto=format&fit=crop&q=80&w=1200',
-    label: 'Patio Residencial'
+    image: galeriaMinimalista,
+    label: 'Jardín Minimalista',
+    description: 'Composición limpia, ordenada y elegante para espacios contemporáneos.'
   },
   {
-    before: 'https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&q=80&w=1200',
-    after: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&q=80&w=1200',
-    label: 'Lote Baldío'
+    image: galeriaTropical,
+    label: 'Jardín Tropical',
+    description: 'Vegetación abundante, color vibrante y sensación de frescura natural.'
   },
   {
-    before: 'https://images.unsplash.com/photo-1534710961216-75c88202f43e?auto=format&fit=crop&q=80&w=1200',
-    after: 'https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&q=80&w=1200',
-    label: 'Jardín Comercial'
+    image: galeriaZen,
+    label: 'Jardín Zen',
+    description: 'Ambiente sereno y balanceado para proyectos que buscan calma visual.'
   }
 ];
 
 const heroCollageImages = [
-  'https://images.unsplash.com/photo-1592419044706-39796d40f98c?auto=format&fit=crop&q=80&w=900',
-  'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&q=80&w=900',
-  'https://images.unsplash.com/photo-1557429287-b2e26467fc2b?auto=format&fit=crop&q=80&w=900',
-  'https://images.unsplash.com/photo-1558904541-efa8c1965f1e?auto=format&fit=crop&q=80&w=900',
-  'https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&q=80&w=900',
-  'https://images.unsplash.com/photo-1534710961216-75c88202f43e?auto=format&fit=crop&q=80&w=900'
+  heroPrincipal,
+  entradaAcogedora,
+  jardineroTrabajandoUno,
+  jardineroTrabajandoDos,
+  clientesFelices,
+  equipoDeTrabajo
 ];
 
 export default function App() {
@@ -426,7 +438,7 @@ export default function App() {
               <div className="hero-collage-track">
                 {heroCollageImages.map((image, index) => (
                   <div key={image} className="hero-collage-item" style={{ transform: `rotate(${index * 60}deg) translateY(-220px)` }}>
-                    <img src={image} alt="Trabajo de jardinería" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                    <img src={image} alt="Trabajo de jardinería" className="w-full h-full object-cover" />
                   </div>
                 ))}
               </div>
@@ -446,10 +458,9 @@ export default function App() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="relative">
               <img
-                src="https://images.unsplash.com/photo-1617098474202-0d0d7f60e1d3?auto=format&fit=crop&q=80&w=1000"
-                alt="Trabajo de jardinería"
+                src={entradaAcogedora}
+                alt="Entrada acogedora del jardín"
                 className="rounded-3xl shadow-2xl"
-                referrerPolicy="no-referrer"
               />
               <div className="absolute -bottom-10 -right-10 bg-brand-600 text-white p-8 rounded-2xl hidden lg:block shadow-xl">
                 <p className="text-4xl font-bold mb-1">100%</p>
@@ -671,22 +682,41 @@ export default function App() {
           <h3 className="text-4xl font-bold text-slate-900 mb-6">Resultados que hablan por sí solos</h3>
         </div>
 
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
-          {gallery.map((item, idx) => (
-            <div key={idx} className="space-y-6">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="relative group">
-                  <img src={item.before} alt="Antes" className="rounded-2xl h-64 w-full object-cover" referrerPolicy="no-referrer" />
-                  <span className="absolute top-4 left-4 bg-black/60 text-white px-3 py-1 rounded-lg text-xs font-bold backdrop-blur-sm">ANTES</span>
-                </div>
-                <div className="relative group">
-                  <img src={item.after} alt="Después" className="rounded-2xl h-64 w-full object-cover border-4 border-brand-500" referrerPolicy="no-referrer" />
-                  <span className="absolute top-4 left-4 bg-brand-600 text-white px-3 py-1 rounded-lg text-xs font-bold shadow-lg">DESPUÉS</span>
+        <div className="max-w-7xl mx-auto space-y-12">
+          <div className="grid lg:grid-cols-[1.3fr_0.7fr] gap-8 items-center rounded-[2rem] border border-slate-200 bg-slate-50 p-6 md:p-8">
+            <div className="relative overflow-hidden rounded-[1.75rem] shadow-xl">
+              <img src={antesYDespues} alt="Comparación antes y después de un jardín" className="h-full min-h-[320px] w-full object-cover" />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/80 to-transparent p-6 text-white">
+                <p className="text-xs font-bold tracking-[0.3em] text-brand-200 uppercase mb-2">Transformación</p>
+                <h4 className="text-2xl md:text-3xl font-bold">Antes y después del mantenimiento</h4>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <span className="inline-flex rounded-full bg-brand-100 px-3 py-1 text-sm font-semibold text-brand-700">Cambio visible</span>
+              <h4 className="text-3xl font-bold text-slate-900">Resultados reales que elevan el espacio</h4>
+              <p className="text-slate-600 leading-relaxed">
+                Esta sección muestra el tipo de transformación que buscamos en cada visita: limpieza, estructura y una mejor presencia visual para el jardín.
+              </p>
+              <div className="grid grid-cols-2 gap-3 text-sm text-slate-600">
+                <div className="rounded-2xl bg-white p-4 border border-slate-200">Mejor definición de bordes</div>
+                <div className="rounded-2xl bg-white p-4 border border-slate-200">Presentación más limpia</div>
+                <div className="rounded-2xl bg-white p-4 border border-slate-200">Mayor sensación de orden</div>
+                <div className="rounded-2xl bg-white p-4 border border-slate-200">Impacto visual inmediato</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {gallery.map((item) => (
+              <div key={item.label} className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+                <img src={item.image} alt={item.label} className="h-72 w-full object-cover" />
+                <div className="p-6">
+                  <h4 className="text-xl font-bold text-slate-900 mb-2">{item.label}</h4>
+                  <p className="text-slate-600">{item.description}</p>
                 </div>
               </div>
-              <p className="text-center font-bold text-slate-700 text-lg">{item.label}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
@@ -749,6 +779,23 @@ export default function App() {
                   <div>
                     <p className="text-slate-400 text-sm">Ubicación</p>
                     <p className="text-xl font-bold">Costa Rica (Cobertura Local)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-10 grid sm:grid-cols-2 gap-4">
+                <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5">
+                  <img src={clientesFelices} alt="Clientes felices en un jardín" className="h-48 w-full object-cover" />
+                  <div className="p-4">
+                    <p className="font-semibold text-white">Experiencia cercana</p>
+                    <p className="text-sm text-slate-400 mt-1">Queremos que el resultado se sienta limpio, útil y agradable desde la primera visita.</p>
+                  </div>
+                </div>
+                <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5">
+                  <img src={herramientasOrganizadas} alt="Herramientas de jardinería organizadas" className="h-48 w-full object-cover" />
+                  <div className="p-4">
+                    <p className="font-semibold text-white">Orden en cada servicio</p>
+                    <p className="text-sm text-slate-400 mt-1">Trabajamos con equipo listo y procesos claros para ejecutar cada mantenimiento con eficiencia.</p>
                   </div>
                 </div>
               </div>
@@ -825,6 +872,13 @@ export default function App() {
                 </div>
               </form>
               <p className="mt-4 text-sm text-slate-500">Al enviar, se abrirá WhatsApp o correo con el mensaje listo para confirmar.</p>
+              <div className="mt-8 overflow-hidden rounded-3xl border border-slate-200 bg-slate-50">
+                <img src={equipoDeTrabajo} alt="Equipo de trabajo de jardinería" className="h-52 w-full object-cover" />
+                <div className="p-5">
+                  <p className="text-sm font-bold uppercase tracking-wider text-brand-700">Equipo local</p>
+                  <p className="mt-2 text-slate-600">Un equipo comprometido con jardines residenciales, lotes y áreas verdes en cobertura local.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
